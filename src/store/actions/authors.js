@@ -47,3 +47,25 @@ export const postAuthor = (newAuthor, closeModal) => {
     }
   };
 };
+
+//POST THE AUTHOR TO https://the-index-api.herokuapp.com/api/authors/
+// export const postBook = (newBook, closeModal) => {
+//   return async dispatch => {
+//     try {
+//       const res = await instance.post("/api/books/", newBook);
+//       const book = res.data;
+//       dispatch(resetErrors());
+//       dispatch({
+//         type: actionTypes.POST_BOOK,
+//         payload: book
+//       });
+//       dispatch(filterBooks(""));
+//       closeModal();
+//     } catch (err) {
+//       dispatch({
+//         type: actionTypes.SET_ERRORS,
+//         payload: err.response.data
+//       });
+//     }
+//   };
+// };
